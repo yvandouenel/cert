@@ -15,12 +15,38 @@ body.front{
     rgba(0, 0, 0, 0.1) inset;
     @media (min-width: @screen-md){
       height: 500px;
+      overflow: hidden;
+    }
+    .field-name-field-image-scald{
+      margin-bottom: 20px;
     }
     .read-more-home-block{
       position: absolute;
       bottom: 10px;
       padding-top: 460px;
       display: block;
+      width: 90%;
+      &:hover{
+        text-decoration: none;
+        .button-home-link{
+          background-color: black;
+        }
+      }
+      .button-home-link{
+        display: block;
+        background-color: @orange;
+        width: 70%;
+        border-radius: 4px;
+        color: white;
+        margin: 0 auto;
+        padding: 5px;
+        text-align: center;
+        &:hover{
+          text-decoration: none;
+          background-color: black;
+        }
+      }
+
     }
   }
 }
