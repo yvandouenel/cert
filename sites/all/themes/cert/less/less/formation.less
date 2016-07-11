@@ -24,3 +24,37 @@
     .button-orange();
   }
 }
+.h3-formation{
+  position: relative;
+  overflow: hidden;
+  &:after{
+    background-color: @gris-fonce;
+    content: "";
+    height: 2px;
+    margin-left: 10px;
+    position: absolute;
+    top: 12px;
+    width: 99%;
+  }
+}
+.group-title-description{
+  background-color: @gris-clair;
+  .field-name-field-titre{
+    padding: 8px 10px 2px 10px;
+    border-radius: 4px;
+    &.description-hidden{
+      background-color: @gris-fonce;
+    }
+    &.description-show{
+      background-color: @gris-tres-fonce;
+      color: white;
+      font-weight: bold;
+    }
+    &:hover{
+      cursor: pointer;
+    }
+  }
+  .field-name-field-description{
+    padding: 15px 0;
+  }
+}
