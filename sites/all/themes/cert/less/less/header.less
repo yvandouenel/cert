@@ -23,6 +23,11 @@ h1.lead{
   @media (min-width: @screen-md){
     margin-top: 29px;
   }
+  .dropdown-menu>li{
+    >a{
+      white-space: normal;
+    }
+  }
   ul.navbar-nav{
 
     > li{
@@ -45,6 +50,9 @@ h1.lead{
           color: @orange;
           font-size: 0.2em;
         }*/
+      }
+      &.active-trail > a{
+        background-color: @gris-fonce;
       }
       &.first{
         border-left: 0px;
