@@ -18,7 +18,9 @@ regions[content-col-2]  = 'Content col 2'
 regions[content-col-3]  = 'Content col 3'
 regions[sidebar_first]  = 'Primary'
 regions[sidebar_second] = 'Secondary'
-regions[footer]         = 'Footer'
+regions[footer-col-1]  = 'Footer col 1'
+regions[footer-col-2]  = 'Footer col 2'
+regions[footer-bottom]  = 'Footer bottom'
 regions[page_top]       = 'Page top'
 regions[page_bottom]    = 'Page bottom'
 
@@ -46,6 +48,9 @@ scripts[] = 'bootstrap/js/popover.js'
 scripts[] = 'bootstrap/js/scrollspy.js'
 scripts[] = 'bootstrap/js/tab.js'
 scripts[] = 'bootstrap/js/transition.js'
+
+scripts[] = 'smartmenus/jquery.smartmenus.js'
+scripts[] = 'smartmenus/addons/bootstrap/jquery.smartmenus.bootstrap.js'
 
 scripts[] = 'js/jquery.matchHeight-min.js'
 
