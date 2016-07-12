@@ -115,32 +115,35 @@ function feature_formation_cert_field_default_field_instances() {
         'label' => 'hidden',
         'module' => 'text',
         'settings' => array(
-          'trim_length' => 600,
+          'trim_length' => 200,
         ),
         'type' => 'text_summary_or_trimmed',
-        'weight' => 0,
+        'weight' => 3,
       ),
     ),
+    'ds_extras_field_template' => '',
     'entity_type' => 'node',
     'field_name' => 'body',
     'label' => 'Body',
-    'required' => FALSE,
+    'required' => 1,
     'settings' => array(
-      'context' => '',
-      'display_summary' => TRUE,
+      'context' => 'title',
+      'context_default' => 'sdl_editor_representation',
+      'display_summary' => 1,
       'dnd_enabled' => 0,
       'mee_enabled' => 0,
       'text_processing' => 1,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
+      'active' => 1,
       'module' => 'text',
       'settings' => array(
         'rows' => 20,
         'summary_rows' => 5,
       ),
       'type' => 'text_textarea_with_summary',
-      'weight' => 31,
+      'weight' => 3,
     ),
   );
 
@@ -169,7 +172,7 @@ function feature_formation_cert_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 15,
       ),
     ),
     'ds_extras_field_template' => '',
@@ -192,7 +195,7 @@ function feature_formation_cert_field_default_field_instances() {
         'rows' => 5,
       ),
       'type' => 'text_textarea',
-      'weight' => 40,
+      'weight' => 12,
     ),
   );
 
@@ -221,7 +224,7 @@ function feature_formation_cert_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 10,
       ),
     ),
     'ds_extras_field_template' => '',
@@ -244,7 +247,7 @@ function feature_formation_cert_field_default_field_instances() {
         'rows' => 5,
       ),
       'type' => 'text_textarea',
-      'weight' => 35,
+      'weight' => 7,
     ),
   );
 
@@ -260,7 +263,7 @@ function feature_formation_cert_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 8,
+        'weight' => 11,
       ),
       'full' => array(
         'label' => 'above',
@@ -273,7 +276,7 @@ function feature_formation_cert_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 9,
       ),
     ),
     'ds_extras_field_template' => '',
@@ -293,10 +296,10 @@ function feature_formation_cert_field_default_field_instances() {
       'active' => 1,
       'module' => 'text',
       'settings' => array(
-        'size' => 60,
+        'rows' => 5,
       ),
-      'type' => 'text_textfield',
-      'weight' => 38,
+      'type' => 'text_textarea',
+      'weight' => 10,
     ),
   );
 
@@ -320,16 +323,17 @@ function feature_formation_cert_field_default_field_instances() {
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
-          'link' => FALSE,
+          'links' => 1,
+          'view_mode' => 'teaser',
         ),
-        'type' => 'entityreference_label',
+        'type' => 'entityreference_entity_view',
         'weight' => 6,
       ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 14,
       ),
     ),
     'ds_extras_field_template' => '',
@@ -349,7 +353,67 @@ function feature_formation_cert_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete_tags',
-      'weight' => 36,
+      'weight' => 8,
+    ),
+  );
+
+  // Exported field_instance: 'node-formation-field_image_scald'.
+  $field_instances['node-formation-field_image_scald'] = array(
+    'bundle' => 'formation',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'atom_reference',
+        'settings' => array(
+          'link' => 0,
+          'override' => 0,
+        ),
+        'type' => 'title',
+        'weight' => 12,
+      ),
+      'full' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'hidden',
+        'module' => 'atom_reference',
+        'settings' => array(
+          'link' => 1,
+          'override' => 0,
+        ),
+        'type' => 'accueil',
+        'weight' => 2,
+      ),
+    ),
+    'ds_extras_field_template' => '',
+    'entity_type' => 'node',
+    'field_name' => 'field_image_scald',
+    'label' => 'Image',
+    'required' => 0,
+    'settings' => array(
+      'allow_override' => 0,
+      'referencable_types' => array(
+        'file' => 0,
+        'gallery' => 0,
+        'image' => 'image',
+        'video' => 0,
+      ),
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'atom_reference',
+      'settings' => array(
+        'context' => 'sdl_editor_representation',
+      ),
+      'type' => 'atom_reference_textfield',
+      'weight' => 1,
     ),
   );
 
@@ -378,7 +442,7 @@ function feature_formation_cert_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 17,
       ),
     ),
     'ds_extras_field_template' => '',
@@ -401,7 +465,7 @@ function feature_formation_cert_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 37,
+      'weight' => 9,
     ),
   );
 
@@ -430,7 +494,7 @@ function feature_formation_cert_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 16,
       ),
     ),
     'ds_extras_field_template' => '',
@@ -453,7 +517,7 @@ function feature_formation_cert_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 39,
+      'weight' => 11,
     ),
   );
 
@@ -482,7 +546,7 @@ function feature_formation_cert_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 13,
       ),
     ),
     'ds_extras_field_template' => '',
@@ -505,7 +569,7 @@ function feature_formation_cert_field_default_field_instances() {
         'rows' => 5,
       ),
       'type' => 'text_textarea',
-      'weight' => 32,
+      'weight' => 4,
     ),
   );
 
@@ -535,7 +599,7 @@ function feature_formation_cert_field_default_field_instances() {
         'settings' => array(
           'add' => 'Ajouter',
           'delete' => 'Supprimer',
-          'description' => TRUE,
+          'description' => 1,
           'edit' => 'Modifier',
           'view_mode' => 'full',
         ),
@@ -546,7 +610,7 @@ function feature_formation_cert_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 12,
       ),
     ),
     'ds_extras_field_template' => '',
@@ -562,7 +626,7 @@ function feature_formation_cert_field_default_field_instances() {
       'module' => 'field_collection',
       'settings' => array(),
       'type' => 'field_collection_embed',
-      'weight' => 33,
+      'weight' => 5,
     ),
   );
 
@@ -591,7 +655,7 @@ function feature_formation_cert_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 11,
       ),
     ),
     'ds_extras_field_template' => '',
@@ -614,7 +678,7 @@ function feature_formation_cert_field_default_field_instances() {
         'rows' => 5,
       ),
       'type' => 'text_textarea',
-      'weight' => 34,
+      'weight' => 6,
     ),
   );
 
@@ -626,6 +690,7 @@ function feature_formation_cert_field_default_field_instances() {
   t('Durée');
   t('Débouchés');
   t('Formations connexes');
+  t('Image');
   t('Lieu');
   t('Nombre de stagiaires');
   t('Objectifs');

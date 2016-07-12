@@ -43,5 +43,6 @@ function feature_formation_cert_field_extra_fields() {
  */
 function feature_formation_cert_init() {
     drupal_add_js(drupal_get_path('module','feature_formation_cert') . '/js/formation_open_close.js');
+    drupal_add_js(drupal_get_path('module','feature_formation_cert') . '/js/same-heights.js');
 }
 
