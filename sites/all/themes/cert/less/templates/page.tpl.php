@@ -113,13 +113,15 @@
         <div class="navbar-collapse collapse">
           <nav role="navigation">
             <?php if (!empty($primary_nav)): ?>
+                <div id="primary-nav">
               <?php print render($primary_nav); ?>
+                </div>
             <?php endif; ?>
-            <?php if (!empty($secondary_nav)): ?>
-              <?php print render($secondary_nav); ?>
-            <?php endif; ?>
+            
             <?php if (!empty($page['navigation'])): ?>
+              <div id="secondary-nav">
               <?php print render($page['navigation']); ?>
+              </div>
             <?php endif; ?>
           </nav>
         </div>
