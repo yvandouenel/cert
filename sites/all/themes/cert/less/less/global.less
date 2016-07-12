@@ -14,12 +14,15 @@ body.not-logged-in{
     margin-top: 80px;
   }
 }
-#block-system-main{
+.fond-blanc-arrondi{
   background-color: white;
   -webkit-border-radius: 8px;
   -moz-border-radius: 8px;
   border-radius: 8px;
   padding: 20px;
+}
+#block-system-main{
+  .fond-blanc-arrondi();
 }
 .button-orange{
   display: block;
@@ -45,4 +48,8 @@ h2.page-header {
 }
 h3{
   font-family: 'Muli', sans-serif;
+}
+/* Field collection ***************************************************************************************************/
+.field-collection-container, .field-collection-view{
+  border: 0;
 }

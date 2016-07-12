@@ -1,6 +1,21 @@
 .group-dde-info{
   &.collapsed{
     .button-orange();
+    position: relative;
+    a{
+      font-size: 0.8em;
+    }
+    &:before{
+      .glyphicon();
+      content: "\e805";
+      position: absolute;
+      top: 13px;
+      left: 10px;
+      font-size: 2em;
+      color: white;
+    }
+
+
     border: 0;
     h3{
       margin-top: 10px;
@@ -42,13 +57,29 @@
   .field-name-field-titre{
     padding: 8px 10px 2px 10px;
     border-radius: 4px;
+    position: relative;
     &.description-hidden{
       background-color: @gris-fonce;
+      &:after{
+        .glyphicon();
+        content: "\e835";
+        position: absolute;
+        right:20px;
+        font-size: 2em;
+      }
     }
     &.description-show{
       background-color: @gris-tres-fonce;
       color: white;
       font-weight: bold;
+      &:after{
+        .glyphicon();
+        content: "\e836";
+        color: white;
+        position: absolute;
+        right:20px;
+        font-size: 2em;
+      }
     }
     &:hover{
       cursor: pointer;
@@ -56,5 +87,82 @@
   }
   .field-name-field-description{
     padding: 15px 0;
+  }
+}
+.group-en-pratique{
+  background-color: @gris-clair;
+  padding: 1px 20px 20px 20px;
+  margin-top: 20px;
+  border-radius: 8px;
+  h3{
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    &:before{
+      content: "";
+      position: absolute;
+      height: 5px;
+      border-bottom: 1px solid black;
+      top: 10px;
+      left:0;
+      width: 50px;
+    }
+    &:after{
+      content: "";
+      position: absolute;
+      height: 5px;
+      border-bottom: 1px solid black;
+      top: 10px;
+      right:0;
+      width: 50px;
+    }
+  }
+}
+.h4-formation{
+  text-transform: uppercase;
+  margin-top: 20px;
+  position: relative;
+  overflow: hidden;
+  font-size: 1em;
+  &:after{
+    background-color: @gris-fonce;
+    content: "";
+    height: 1px;
+    margin-left: 10px;
+    position: absolute;
+    top: 6px;
+    width: 99%;
+  }
+}
+.node-type-formation{
+  .view-mode-teaser{
+    .formation-list();
+    h2{
+      font-size: 1em;
+      margin-top: 0;
+    }
+  }
+}
+
+/* liste des formations ***********************************************************************************************/
+.formation-list {
+  .fond-blanc-arrondi();
+  float: left;
+  margin-right:1%;
+  margin-bottom: 20px;
+  width: 32%;
+}
+.page-formations{
+  #block-system-main{
+    background-color: transparent;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    padding: 0;
+    .view-formations{
+      .views-row{
+        .formation-list();
+      }
+    }
   }
 }
