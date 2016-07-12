@@ -19,3 +19,98 @@ h1.lead{
   clear: both;
   margin: -10px 0 5px 0
 }
+#navbar #primary-nav {
+  @media (min-width: @screen-md){
+    margin-top: 29px;
+  }
+  ul.navbar-nav{
+
+    > li{
+      > a{
+        font-size: 1.6em;
+        padding-left: 30px;
+        display: block;
+        text-transform: uppercase;
+        &:hover:before{
+          color: black;
+        }
+        /*&:before{
+          .glyphicon();
+          content: "\e858";
+          position: absolute;
+          top: 12px;
+          left: 5px;
+          color: @gris-tres-fonce;
+          margin: 5px 10px;
+          color: @orange;
+          font-size: 0.2em;
+        }*/
+      }
+      &.first{
+        border-left: 0px;
+        a{
+          padding-left: 0;
+          text-indent:-6000px;
+          width: 42px;
+          position: relative;
+          &:hover:before{
+            color: #000;
+          }
+          &:before{
+            text-indent: 0;
+            .glyphicon();
+            content: "\e819";
+            position: absolute;
+            top: 8px;
+            left: 0px;
+            color: @gris-tres-fonce;
+            margin: 5px 10px;
+          }
+        }
+      }
+    }
+    .dropdown-menu>.active>a, .dropdown-menu>.active>a:focus, .dropdown-menu>.active>a:hover{
+      background-color: @gris-tres-fonce;
+    }
+  }
+}
+#navbar #secondary-nav{
+  @media (min-width: @screen-sm){
+    margin-top: -15px;
+    margin-right: 10px;
+  }
+  float: right;
+  li{
+    margin: 0;
+    padding: 0;
+    a{
+      padding: 3px;
+      &:before{
+        .glyphicon();
+        content: "\e82c";
+      }
+    }
+    &.first{
+      a{
+        &:before{
+          content: "\e828";
+        }
+      }
+    }
+    &.last{
+      a{
+        &:before{
+          content: "\e830";
+        }
+      }
+    }
+  }
+}
+.breadcrumb{
+  @media (max-width: @screen-sm){
+    display: none;
+  }
+  margin-top: -35px;
+  float: right;
+  margin-bottom: 0;
+}

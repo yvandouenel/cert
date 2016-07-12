@@ -24,6 +24,14 @@ body.not-logged-in{
 #block-system-main{
   .fond-blanc-arrondi();
 }
+a.fleche{
+  &:before{
+    .glyphicon();
+    content: "\e859";
+    color: @bleu-lien;
+    margin-right: 0;
+  }
+}
 .button-orange{
   display: block;
   background-color: @orange;
@@ -52,4 +60,11 @@ h3{
 /* Field collection ***************************************************************************************************/
 .field-collection-container, .field-collection-view{
   border: 0;
+}
+/* Diaporamas *********************************************************************************************************/
+.galleria-container{
+  background-color: @gris-clair;
+  -webkit-border-radius:8px;
+  -moz-border-radius:8px;
+  border-radius:8px;
 }
