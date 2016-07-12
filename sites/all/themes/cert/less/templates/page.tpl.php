@@ -117,7 +117,7 @@
               <?php print render($primary_nav); ?>
                 </div>
             <?php endif; ?>
-            
+
             <?php if (!empty($page['navigation'])): ?>
               <div id="secondary-nav">
               <?php print render($page['navigation']); ?>
@@ -193,9 +193,26 @@
 
   </div>
 </div>
-
-<?php if (!empty($page['footer'])): ?>
-  <footer class="footer <?php print $container_class; ?>">
-    <?php print render($page['footer']); ?>
-  </footer>
+<footer id="main-footer">
+  <div class="container">
+<?php if (!empty($page['footer-col-1'])): ?>
+  <div class="col-md-6">
+    <?php print render($page['footer-col-1']); ?>
+  </div>
 <?php endif; ?>
+  <?php if (!empty($page['footer-col-2'])): ?>
+    <div class="col-md-6">
+      <?php print render($page['footer-col-2']); ?>
+    </div>
+  <?php endif; ?>
+  </div>
+  <div class="under-footer-bottom">
+    <div class="container">
+<?php if (!empty($page['footer-bottom'])): ?>
+  <div>
+    <?php print render($page['footer-bottom']); ?>
+  </div>
+<?php endif; ?>
+    </div>
+  </div>
+</footer>
