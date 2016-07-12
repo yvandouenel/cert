@@ -27,6 +27,7 @@ function feature_formation_cert_field_group_info() {
       1 => 'field_nombre_de_stagiaires',
       2 => 'field_conditions_acces_prerequis',
       3 => 'field_duree',
+      4 => 'field_dates_formation',
     ),
     'format_type' => 'div',
     'format_settings' => array(

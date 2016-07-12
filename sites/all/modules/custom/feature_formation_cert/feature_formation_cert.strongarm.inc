@@ -98,6 +98,9 @@ function feature_formation_cert_strongarm() {
         'redirect' => array(
           'weight' => '2',
         ),
+        'path' => array(
+          'weight' => '14',
+        ),
       ),
       'display' => array(
         'extra_field_form_info' => array(
