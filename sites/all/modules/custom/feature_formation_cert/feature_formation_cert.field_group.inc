@@ -21,13 +21,14 @@ function feature_formation_cert_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'En pratique',
-    'weight' => '9',
+    'weight' => '8',
     'children' => array(
       0 => 'field_lieu',
       1 => 'field_nombre_de_stagiaires',
       2 => 'field_conditions_acces_prerequis',
       3 => 'field_duree',
       4 => 'field_dates_formation',
+      5 => 'print_link',
     ),
     'format_type' => 'div',
     'format_settings' => array(
@@ -60,9 +61,9 @@ function feature_formation_cert_field_group_info() {
     'weight' => '8',
     'children' => array(
       0 => 'field_lieu',
-      1 => 'field_duree',
-      2 => 'field_nombre_de_stagiaires',
-      3 => 'field_conditions_acces_prerequis',
+      1 => 'field_nombre_de_stagiaires',
+      2 => 'field_conditions_acces_prerequis',
+      3 => 'field_duree',
     ),
     'format_type' => 'html5',
     'format_settings' => array(

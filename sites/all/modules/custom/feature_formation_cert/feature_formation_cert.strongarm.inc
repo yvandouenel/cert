@@ -81,12 +81,15 @@ function feature_formation_cert_strongarm() {
         'custom_settings' => FALSE,
       ),
       'print' => array(
-        'custom_settings' => FALSE,
+        'custom_settings' => TRUE,
       ),
       'revision' => array(
         'custom_settings' => FALSE,
       ),
       'token' => array(
+        'custom_settings' => FALSE,
+      ),
+      'diff_standard' => array(
         'custom_settings' => FALSE,
       ),
     ),
@@ -115,6 +118,10 @@ function feature_formation_cert_strongarm() {
           'teaser' => array(
             'weight' => '8',
             'visible' => FALSE,
+          ),
+          'print' => array(
+            'weight' => '11',
+            'visible' => TRUE,
           ),
         ),
       ),
