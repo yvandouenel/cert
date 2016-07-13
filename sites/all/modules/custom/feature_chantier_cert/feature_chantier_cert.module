@@ -5,3 +5,9 @@
  */
 
 include_once 'feature_chantier_cert.features.inc';
+/**
+ * Implements hook_init().
+ */
+function feature_chantier_cert_init() {
+    drupal_add_js(drupal_get_path('module','feature_chantier_cert') . '/js/same-heights.js');
+}
