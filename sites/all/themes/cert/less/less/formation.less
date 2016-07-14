@@ -166,7 +166,11 @@
   float: left;
   margin-right:1%;
   margin-bottom: 20px;
-  width: 32%;
+  width: 100%;
+  
+  @media (min-width: @screen-md) {
+    width: 32%;
+  }
   h2{
     a{
       font-size:0.8em;
