@@ -13,6 +13,70 @@ function feature_formation_cert_field_group_info() {
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
   $field_group->api_version = 1;
+  $field_group->identifier = 'group_dde_info|node|formation|default';
+  $field_group->group_name = 'group_dde_info';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'formation';
+  $field_group->mode = 'default';
+  $field_group->parent_name = '';
+  $field_group->data = array(
+    'label' => 'Demande d\'informations',
+    'weight' => '6',
+    'children' => array(
+      0 => 'extra_field_form_info',
+    ),
+    'format_type' => 'div',
+    'format_settings' => array(
+      'label' => 'Demande d\'informations',
+      'instance_settings' => array(
+        'id' => '',
+        'classes' => 'group-dde-info field-group-div',
+        'description' => '',
+        'show_label' => '1',
+        'label_element' => 'h3',
+        'effect' => 'none',
+        'speed' => 'fast',
+      ),
+      'formatter' => 'collapsed',
+    ),
+  );
+  $field_groups['group_dde_info|node|formation|default'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
+  $field_group->identifier = 'group_dde_info|node|formation|full';
+  $field_group->group_name = 'group_dde_info';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'formation';
+  $field_group->mode = 'full';
+  $field_group->parent_name = '';
+  $field_group->data = array(
+    'label' => 'Demande d\'informations',
+    'weight' => '7',
+    'children' => array(
+      0 => 'extra_field_form_info',
+    ),
+    'format_type' => 'div',
+    'format_settings' => array(
+      'label' => 'Demande d\'informations',
+      'instance_settings' => array(
+        'id' => '',
+        'classes' => 'group-dde-info field-group-div',
+        'description' => '',
+        'show_label' => '1',
+        'label_element' => 'h3',
+        'effect' => 'none',
+        'speed' => 'fast',
+      ),
+      'formatter' => 'collapsed',
+    ),
+  );
+  $field_groups['group_dde_info|node|formation|full'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
   $field_group->identifier = 'group_en_pratique|node|formation|full';
   $field_group->group_name = 'group_en_pratique';
   $field_group->entity_type = 'node';
@@ -46,6 +110,38 @@ function feature_formation_cert_field_group_info() {
     ),
   );
   $field_groups['group_en_pratique|node|formation|full'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
+  $field_group->identifier = 'group_form|node|formation|print';
+  $field_group->group_name = 'group_form';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'formation';
+  $field_group->mode = 'print';
+  $field_group->parent_name = '';
+  $field_group->data = array(
+    'label' => 'group form',
+    'weight' => '12',
+    'children' => array(
+      0 => 'extra_field_form_info',
+    ),
+    'format_type' => 'div',
+    'format_settings' => array(
+      'label' => 'group form',
+      'instance_settings' => array(
+        'id' => '',
+        'classes' => 'group-form field-group-div form-print',
+        'description' => '',
+        'show_label' => '0',
+        'label_element' => 'h3',
+        'effect' => 'none',
+        'speed' => 'fast',
+      ),
+      'formatter' => 'open',
+    ),
+  );
+  $field_groups['group_form|node|formation|print'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -146,7 +242,9 @@ function feature_formation_cert_field_group_info() {
 
   // Translatables
   // Included for use with string extractors like potx.
+  t('Demande d\'informations');
   t('En pratique');
+  t('group form');
   t('group titre description');
   t('group titre resume');
 

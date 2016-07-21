@@ -120,7 +120,7 @@ function feature_formation_cert_strongarm() {
             'visible' => FALSE,
           ),
           'print' => array(
-            'weight' => '11',
+            'weight' => '13',
             'visible' => TRUE,
           ),
         ),

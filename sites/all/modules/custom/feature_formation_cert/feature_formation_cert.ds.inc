@@ -362,6 +362,60 @@ function feature_formation_cert_ds_layout_settings_info() {
 
   $ds_layout = new stdClass();
   $ds_layout->api_version = 1;
+  $ds_layout->id = 'node|formation|print';
+  $ds_layout->entity_type = 'node';
+  $ds_layout->bundle = 'formation';
+  $ds_layout->view_mode = 'print';
+  $ds_layout->layout = 'ds_1col';
+  $ds_layout->settings = array(
+    'regions' => array(
+      'ds_content' => array(
+        0 => 'title',
+        1 => 'field_objectifs',
+        2 => 'body',
+        3 => 'field_programme',
+        4 => 'field_validation',
+        5 => 'field_debouches',
+        6 => 'field_formations_connexes',
+        7 => 'field_lieu',
+        8 => 'field_dates_formation',
+        9 => 'field_duree',
+        10 => 'field_nombre_de_stagiaires',
+        11 => 'field_conditions_acces_prerequis',
+        12 => 'group_form',
+        13 => 'extra_field_form_info',
+      ),
+    ),
+    'fields' => array(
+      'title' => 'ds_content',
+      'field_objectifs' => 'ds_content',
+      'body' => 'ds_content',
+      'field_programme' => 'ds_content',
+      'field_validation' => 'ds_content',
+      'field_debouches' => 'ds_content',
+      'field_formations_connexes' => 'ds_content',
+      'field_lieu' => 'ds_content',
+      'field_dates_formation' => 'ds_content',
+      'field_duree' => 'ds_content',
+      'field_nombre_de_stagiaires' => 'ds_content',
+      'field_conditions_acces_prerequis' => 'ds_content',
+      'group_form' => 'ds_content',
+      'extra_field_form_info' => 'ds_content',
+    ),
+    'classes' => array(),
+    'wrappers' => array(
+      'ds_content' => 'div',
+    ),
+    'layout_wrapper' => 'div',
+    'layout_attributes' => '',
+    'layout_attributes_merge' => 1,
+    'layout_link_attribute' => '',
+    'layout_link_custom' => '',
+  );
+  $export['node|formation|print'] = $ds_layout;
+
+  $ds_layout = new stdClass();
+  $ds_layout->api_version = 1;
   $ds_layout->id = 'node|formation|teaser';
   $ds_layout->entity_type = 'node';
   $ds_layout->bundle = 'formation';
