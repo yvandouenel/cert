@@ -1783,3 +1783,4 @@ body.front #block-views-news-block-actu div.more-link a a{color:#fff}
 .page-actualites .views-row.views-row-last:after{background-image:none}
 .page-actualites .views-row h3.title-news-list a{display:block}
 .page-actualites .views-row .views-field-field-news-image{float:left;margin:0 20px 20px 0}
+.form-print button,.form-print input,.form-print label,.form-print textarea{display:none}
