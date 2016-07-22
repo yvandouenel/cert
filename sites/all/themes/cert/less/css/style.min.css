@@ -1726,7 +1726,9 @@ body.front .col-md-4 .block-bean .read-more-home-block .button-home-link a{color
 body.front .col-md-4 .block-bean h2{font-family:Muli,sans-serif;color:#337ab7}
 body.front #block-views-news-block-actu{background-color:#e3e3e3;padding:20px;margin-top:20px;position:relative}
 body.front #block-bean-intro-accueil{background-color:#fff;margin:0 15px;padding:20px}
-body.front #block-views-news-block-actu div.more-link{position:absolute;bottom:10px;display:block;width:90%}
+body.front #block-views-news-block-actu div.more-link{display:block;width:90%}
+@media (min-width:992px){body.front #block-views-news-block-actu div.more-link{position:absolute;bottom:10px}
+}
 body.front #block-views-news-block-actu div.more-link a{background-color:#ff6d00;border-radius:4px;color:#fff;padding:5px;text-align:center;margin:0 auto;display:block;width:70%}
 body.front #block-views-news-block-actu div.more-link a:hover{background-color:#000}
 body.front #block-views-news-block-actu div.more-link a a{color:#fff}

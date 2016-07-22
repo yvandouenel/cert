@@ -47,6 +47,7 @@ body.front{
       color: @bleu-lien;
     }
   }
+
   #block-views-news-block-actu{
     background-color: @gris-fonce;
     padding: 20px;
@@ -64,8 +65,10 @@ body.front{
   #block-views-news-block-actu{
     position: relative;
     div.more-link{
-      position: absolute;
-      bottom: 10px;
+      @media (min-width: @screen-md) {
+        position: absolute;
+        bottom: 10px;
+      }
       display: block;
       width: 90%;
       a{
