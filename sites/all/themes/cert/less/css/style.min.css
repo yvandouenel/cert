@@ -1480,9 +1480,10 @@ body #admin-menu .dropdown li{line-height:normal}
 .footer{margin-top:45px;padding-top:35px;padding-bottom:36px;border-top:1px solid #E5E5E5}
 .element-invisible{margin:0;padding:0;width:1px}
 .navbar .logo{margin-right:-15px;padding-left:15px;padding-right:15px}
+@media (max-width:992px){.navbar .logo{margin-right:0;padding-left:0}
+}
 ul.secondary{float:left}
-@media screen and (min-width:768px){.navbar .logo{margin-right:0;padding-left:0}
-ul.secondary{float:right}
+@media screen and (min-width:768px){ul.secondary{float:right}
 }
 .block:first-child h2.block-title,.page-header{margin-top:0}
 p:last-child{margin-bottom:0}
