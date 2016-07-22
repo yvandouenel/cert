@@ -1479,9 +1479,7 @@ body #admin-menu .dropdown li{line-height:normal}
 .modal-backdrop{z-index:1610}
 .footer{margin-top:45px;padding-top:35px;padding-bottom:36px;border-top:1px solid #E5E5E5}
 .element-invisible{margin:0;padding:0;width:1px}
-.navbar .logo{margin-right:-15px;padding-left:15px;padding-right:15px}
-@media (max-width:992px){.navbar .logo{margin-right:0;padding-left:0}
-}
+.navbar .logo{margin-right:0;padding-left:0;padding-right:15px}
 ul.secondary{float:left}
 @media screen and (min-width:768px){ul.secondary{float:right}
 }
